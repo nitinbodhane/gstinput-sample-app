@@ -1,0 +1,23 @@
+<h4>List of contacts</h4>
+<div class="table-responsive">
+    <table id="mytable" class="table table-bordred table-striped">
+      <thead>
+        <th><input type="checkbox" id="checkall" /></th>
+        <th>Name</th>
+        <th>Contact Name</th>
+        <th>Email</th>
+        <th>Country</th>
+        <th>version</th>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let item of organizationData" >
+          <td><input type="checkbox" class="checkthis" /></td>
+          <td>{{item.name}}</td>
+          <td>{{item.contact_name}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.country}}</td>
+          <td>{{item.version}}</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
